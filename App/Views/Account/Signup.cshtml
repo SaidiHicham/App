@@ -1,0 +1,100 @@
+﻿@model App.Models.Account
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lamalemcash Signup</title>
+
+    @{
+        ViewData["Title"] = "Signup";
+    }
+
+</head>
+
+<body>
+
+<!-- Register In start -->
+<section class="sign-in-up register">
+    <div class="overlay pt-120 pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="form-content">
+                        <div class="section-header">
+                            <h5 class="sub-title">The Power of Financial Freedom</h5>
+                            <h2 class="title">Let’s Get Started!</h2>
+                            <p>Please Enter your Email Address to Start your Online Application</p>
+                        </div>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="single-input">
+                                        <label for="fname">First Name</label>
+                                        <input type="text" id="name" placeholder="Jone">
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="single-input">
+                                        <label for="lname">Last Name</label>
+                                        <input type="text" id="lname" placeholder="Fisher">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="single-input">
+                                        <label for="email">Enter Your Email ID</label>
+                                        <input type="text" id="email" placeholder="Your email ID here">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="single-input">
+                                        <label for="referral">Someone invited you over?</label>
+                                        <input type="text" id="referral" placeholder="Enter the referral code">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="single-input">
+                                        <p>By clicking submit, you agree to <span>Bankio's Terms of Use, Privacy Policy, E-sign</span> & <span>communication Authorization.</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-area">
+                                <button class="cmn-btn">Submit Now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="~/js/jquery.min.js"></script>
+<script src="~/js/jquery-ui.js"></script>
+<script src="~/js/bootstrap.min.js"></script>
+<script src="~/js/fontawesome.js"></script>
+<script src="~/js/plugin/slick.js"></script>
+<script src="~/js/plugin/waypoint.min.js"></script>
+<script src="~/js/plugin/counter.js"></script>
+<script src="~/js/plugin/jquery.nice-select.min.js"></script>
+<script src="~/js/plugin/wow.min.js"></script>
+<script src="~/js/plugin/plugin.js"></script>
+<script src="~/js/main.js"></script>
+
+
+<!-- Register In end -->
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
+</body>
+</html>

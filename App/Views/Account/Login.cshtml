@@ -1,0 +1,76 @@
+﻿@model App.Models.Account
+
+
+<!doctype html>
+<html class="no-js" lang="en">
+
+
+<!-- Mirrored from pixner.net/bankio/login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 24 Aug 2022 11:11:48 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bankio - HTML Template</title>
+
+    @{
+        ViewData["Title"] = "Login";
+    }
+
+
+</head>
+
+<body>
+
+<!-- Login In start -->
+<section class="sign-in-up login">
+    <div class="overlay pt-120 pb-120">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="form-content">
+                        <div class="section-header">
+                            <h5 class="sub-title">The Power of Financial Freedom</h5>
+                            <h2 class="title">Set Up Your Password</h2>
+                            <p>Your security is our top priority. You'll need this to log into your bankio account</p>
+                        </div>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="single-input">
+                                        <label for="email">Enter Your Email ID</label>
+                                        <input type="text" id="email" placeholder="Your email ID here">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="single-input ">
+                                        <label for="confirmPass">Confirm Password</label>
+                                        <div class="password-show d-flex align-items-center">
+                                            <input type="text" class="passInput" id="confirmPass" autocomplete="off" placeholder="Enter Your Password">
+                                            <img class="showPass" src="assets/images/icon/show-hide.png" alt="icon">
+                                        </div>
+                                        <div class="forgot-area text-end">
+                                            <a href="javascript:void(0)" class="forgot-password">Forgot Password?</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn-area">
+                                <button class="cmn-btn">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Login In end -->
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+</body>
+</html>

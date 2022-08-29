@@ -1,10 +1,68 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Web;
+using App.Models;
 
 namespace App.Controllers
 {
     public class AccountController : Controller
     {
+
+
+
+        public ActionResult Login()
+        {
+            ViewData["Title"] = "Login";
+            return View();
+        }
+
+
+        public ActionResult Signup()
+        {
+            ViewData["Title"] = "Signup";
+            return View();
+        }
+
+
+        public ActionResult Signout()
+        {
+            return View();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         // GET: AccountController
         public ActionResult Index()
         {
